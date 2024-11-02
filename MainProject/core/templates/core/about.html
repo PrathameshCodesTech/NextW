@@ -1,0 +1,191 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %}
+
+
+<!-- About Hero Section -->
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+<script src="{% static 'js/about.js' %}"></script>
+
+<section class="about-hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <h1>Empowering Dreams Through Education</h1>
+        <p class="lead">
+          At NextWisdom, we believe in the transformative power of education to
+          shape futures and create opportunities.
+        </p>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <img
+          src="/api/placeholder/600/400"
+          alt="NextWisdom Learning Environment"
+          class="img-fluid rounded shadow-lg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Vision Section -->
+<section class="mission-vision">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="content-card mission">
+          <i class="fas fa-bullseye"></i>
+          <h2>Our Mission</h2>
+          <p>
+            To provide accessible, high-quality education that empowers
+            individuals to achieve their professional goals and make a positive
+            impact in their communities.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="content-card vision">
+          <i class="fas fa-eye"></i>
+          <h2>Our Vision</h2>
+          <p>
+            To be the leading global platform for transformative online
+            education, creating a world where quality learning knows no
+            boundaries.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values Section -->
+<section class="values-section">
+  <div class="container">
+    <h2 class="section-title text-center" data-aos="fade-up">
+      Our Core Values
+    </h2>
+    <div class="row">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="value-card">
+          <i class="fas fa-star"></i>
+          <h3>Excellence</h3>
+          <p>
+            We strive for excellence in every aspect of our educational
+            offerings.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="value-card">
+          <i class="fas fa-users"></i>
+          <h3>Community</h3>
+          <p>
+            We foster a supportive learning community that encourages
+            collaboration.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="value-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Innovation</h3>
+          <p>We embrace innovation in education and technology.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="team-section">
+  <div class="container">
+    <h2 class="section-title text-center" data-aos="fade-up">
+      Our Leadership Team
+    </h2>
+    <div class="row">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-card">
+          <img
+            src="/api/placeholder/300/300"
+            alt="Sarah Wilson"
+            class="rounded-circle"
+          />
+          <h3>Sarah Wilson</h3>
+          <p class="position">CEO & Founder</p>
+          <p class="bio">
+            With over 15 years in EdTech, Sarah leads NextWisdom's mission to
+            transform online education.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-card">
+          <img
+            src="/api/placeholder/300/300"
+            alt="David Chen"
+            class="rounded-circle"
+          />
+          <h3>David Chen</h3>
+          <p class="position">Chief Technology Officer</p>
+          <p class="bio">
+            David brings extensive experience in building scalable educational
+            platforms.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-card">
+          <img
+            src="/api/placeholder/300/300"
+            alt="Maria Rodriguez"
+            class="rounded-circle"
+          />
+          <h3>Maria Rodriguez</h3>
+          <p class="position">Head of Education</p>
+          <p class="bio">
+            Maria ensures the highest quality of educational content and
+            learning experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3" data-aos="fade-up">
+        <div class="stat-card">
+          <i class="fas fa-user-graduate"></i>
+          <h3 class="counter">50,000+</h3>
+          <p>Students Worldwide</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-card">
+          <i class="fas fa-book-open"></i>
+          <h3 class="counter">200+</h3>
+          <p>Courses Available</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-card">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3 class="counter">100+</h3>
+          <p>Expert Instructors</p>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-card">
+          <i class="fas fa-globe"></i>
+          <h3 class="counter">50+</h3>
+          <p>Countries Reached</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
