@@ -1,12 +1,17 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% load static %}
+
+{% block title %}
+About Us
+{% endblock %}
+
+{% block extra_css %}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<link rel="stylesheet" href="{% static 'core/css/about.css' %}" />
+{% endblock %} 
+
 {% block content %}
-
-
 <!-- About Hero Section -->
-<link rel="stylesheet" href="{% static 'css/about.css' %}">
-<script src="{% static 'js/about.js' %}"></script>
-
 <section class="about-hero">
   <div class="container">
     <div class="row align-items-center">
@@ -19,7 +24,7 @@
       </div>
       <div class="col-lg-6" data-aos="fade-left">
         <img
-          src="/api/placeholder/600/400"
+          src="{% static 'core/images/N.jpg' %}"
           alt="NextWisdom Learning Environment"
           class="img-fluid rounded shadow-lg"
         />
@@ -106,7 +111,7 @@
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
         <div class="team-card">
           <img
-            src="/api/placeholder/300/300"
+            src="{% static 'core/images/Sarah.jpg' %}"
             alt="Sarah Wilson"
             class="rounded-circle"
           />
@@ -121,7 +126,7 @@
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
         <div class="team-card">
           <img
-            src="/api/placeholder/300/300"
+            src="{% static 'core/images/David.jpg' %}"
             alt="David Chen"
             class="rounded-circle"
           />
@@ -136,7 +141,7 @@
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
         <div class="team-card">
           <img
-            src="/api/placeholder/300/300"
+            src="{% static 'core/images/Maria.jpg' %}"
             alt="Maria Rodriguez"
             class="rounded-circle"
           />
@@ -187,5 +192,9 @@
     </div>
   </div>
 </section>
+
+{% endblock %} {% block extra_js %}
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="{% static 'core/js/about.js' %}"></script>
 
 {% endblock %}

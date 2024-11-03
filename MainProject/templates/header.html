@@ -20,7 +20,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link active" href="{% url 'Home' %}">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#courses">Courses</a>
@@ -28,9 +28,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#instructors">Instructors</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="{% static url 'templates/About' %}">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'About' %}">About</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="{% url 'Contact' %}">Contact</a>
           </li>
         </ul>
         <div class="ms-3">
